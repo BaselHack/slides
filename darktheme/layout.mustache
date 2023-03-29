@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="{{encoding}}">
+  {{#version}}<meta name="generator" content="cleaver {{version}}" />{{/version}}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>{{title}}</title>
+  <style type="text/css">
+    {{{style}}}
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css" integrity="sha512-XgCw4Srl8lC1ECwcaHwAU0WnxQwHkqmInzg9wJLtGB7DRuMaXPuK2k9WJ2AwRDGdrgK9eJpZl2hUlLi2WQssmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.0.1/wordcloud2.min.js" integrity="sha512-V9GoXkVO7MfITOYkagdEaqowj4FJtxO7SLhX38OHNBCDnQOGeNiFVveH/hGXWvWVEp7UhAXIa3mDsn6APywNvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {{#options.watch}}
+    <script async src="http://localhost:35729/livereload.js"></script>
+  {{/options.watch}}
+
+</head>
+<body>
+  {{{slideshow}}}
+
+  <script type="text/javascript">
+    {{{script}}}
+  </script>
+</body>
+</html>
